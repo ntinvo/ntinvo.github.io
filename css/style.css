@@ -1,0 +1,143 @@
+/* by Tin Vo */
+
+/* ----------------------------------------------------- */
+/*                       BASIC SETUP                     */
+/* ----------------------------------------------------- */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(../css/img/bg.png);
+    height: 100vh;  /* Set height to viewport(max) */
+    background-size: cover; /* Fix the img(too zoom-in */
+    background-position: center;
+    background-attachment: fixed;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+/* ----------------------------------------------------- */
+/*                   CONTAINER & PARAGRAPH               */
+/* ----------------------------------------------------- */
+#container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom:  50px;
+    text-align: center;
+}
+
+#container h1 {
+    margin-top: 20px;
+    font-weight: 200;
+    color: #fff;
+    font-size: 800%;
+    word-spacing: 3px;
+    letter-spacing: 300;
+    padding: 0;
+    margin: 0;
+}
+
+#container p {
+    margin-top: 5px;
+    width: 70%;
+    padding-left: 15%;
+    height: 10%;
+    font-size: 110%;
+    color: #95a5a6;
+    font-weight: 170;
+    word-spacing: 3px;
+    letter-spacing: 300;
+    text-align: center;
+    margin-top: 30px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+#container p:hover,
+#container p:active {
+    color: #2980b9;
+    transform: scale(1.5);
+}
+
+
+
+/* ----------------------------------------------------- */
+/*                     CONTACT & ICONS                   */
+/* ----------------------------------------------------- */
+
+.contact-icons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-icons a {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.icon {
+    width: 30px;
+    color: #bdc3c7;
+    font-size: 300%;
+}
+
+
+.ion-social-github,
+.ion-ios-list-outline,
+.ion-social-linkedin,
+.ion-android-mail {
+    transition: color 0.2s, transform 0.5s;
+}
+
+.ion-social-github:hover,
+.ion-social-github:active {
+    color: #d35400;
+    transform: rotateX(360deg);
+}
+
+.ion-ios-list-outline:hover,
+.ion-ios-list-outline:active {
+    color: #2ecc71;
+    transform: rotateX(360deg);
+}
+
+.ion-social-linkedin:hover, 
+.ion-social-linkedin:active{
+    color: #007bb5;
+    transform: rotateX(360deg);
+}
+
+.ion-android-mail:hover,
+.ion-android-mail:active {
+    color: #bb0000;
+    transform: rotateX(360deg);
+}
+
+.makebig {
+    font-size: 310%;
+}
+
+
+

@@ -19,7 +19,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -38,11 +38,11 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav class="navbar navbar-default  navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="color: white">
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
@@ -57,7 +57,11 @@
                     </li>
 
                     <li>
-                        <a href="post1.html">Project One</a>
+                        <a href="post1.html">Online Censorship</a>
+                    </li>
+
+                    <li>
+                        <a href="post2.html">Usability Redesign</a>
                     </li>
 <!--                     <li>
                         <a href="about.html">About</a>
@@ -77,7 +81,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header id="didScroll" class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -95,8 +99,21 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="post2.html">
+                        <h2 class="post-title">
+                            Websites Accessibility and Usability
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Internet censorship and things that we don't know about the "hidden wall"
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by Tin Vo</a> on October 08, 2016</p>
+                </div>
+
+                <div class="post-preview">
+                    <a href="post1.html">
                         <h2 class="post-title">
                             Online Censorship in Vietnam and Japan
                         </h2>
@@ -201,6 +218,24 @@
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <script>
+        $(document).ready(function(){       
+            var start = 0;
+            var didScroll = $('#didScroll');
+            var offset = didScroll.offset();
+
+            $(document).scroll(function() { 
+                start = $(this).scrollTop();
+                console.log(offset.top);
+                if(start > offset.top) {
+                    $(".navbar-default").css('background-color', 'black');
+                } else {
+                   $('.navbar-default').css('background-color', 'transparent');
+                }
+            });
+        });
+    </script>
 
 </body>
 

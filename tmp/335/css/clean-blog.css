@@ -398,3 +398,12 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #0085A1;
 }
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}

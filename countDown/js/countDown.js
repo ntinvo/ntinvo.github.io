@@ -50,8 +50,8 @@ function countDown(endDate) {
 			document.getElementById("gif-photo").style = "width: 75%, height: auto;"; 
 
 			// Play audio
-			// var audioPlayer = document.getElementById("myAudio");
-			// audioPlayer.play();
+			var audioPlayer = document.getElementById("myAudio");
+			audioPlayer.play();
 
 			// Remove the buttons
 			newYearBtn.remove();
@@ -125,8 +125,8 @@ function goToNewYearHandler() {
 			document.getElementById("gif-photo").style = "width: 75%, height: auto;"; 
 
 			// Play audio
-			// var audioPlayer = document.getElementById("myAudio");
-			// audioPlayer.play();
+			var audioPlayer = document.getElementById("myAudio");
+			audioPlayer.play();
 
 			// Remove the buttons
 			newYearBtn.remove();

@@ -77,7 +77,7 @@ var _typed2 = _interopRequireDefault(_typed);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var options = {
-  strings: ["<i>First</i> sentence.", "Second sentence."],
+  strings: ["web applications", "user interfaces", "landing pages", "mobile applications"],
   typeSpeed: 40,
   fadeOut: true,
   loop: true

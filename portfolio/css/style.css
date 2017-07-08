@@ -1,0 +1,19 @@
+span.typing_text {
+    font-size: 50px;
+}
+.typed-cursor {
+    font-size: 40px;
+}
+
+.fa {
+    color: black;
+    transition: color .5s
+}
+
+.fa:hover {
+    color: #F05F40;
+}
+
+.phone_number {
+    color: #F05F40;
+}

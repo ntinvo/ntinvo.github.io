@@ -1,7 +1,7 @@
 import Typed from 'typed.js';
 
 var options = {
-  strings: ["<i>First</i> sentence.", "Second sentence."],
+  strings: ["web applications", "user interfaces", "landing pages", "mobile applications"],
   typeSpeed: 40,
   fadeOut: true,
   loop: true

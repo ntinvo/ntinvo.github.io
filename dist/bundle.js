@@ -65,25 +65,23 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_typed_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_typed_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_typed_js__);
 
-
-var _typed = __webpack_require__(1);
-
-var _typed2 = _interopRequireDefault(_typed);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var options = {
-  strings: ["web applications", "user interfaces", "landing pages", "mobile applications"],
+  strings: ["web developer", "coder", "gamer", "mobile developer", "programmer", "pizza eater", "debugger", "tester", "software developer", "software engineer", "bicycler", "runner"],
   typeSpeed: 40,
   fadeOut: true,
-  loop: true
+  loop: true,
+  shuffle: true
 };
 
-var typed = new _typed2.default(".typing_text", options);
+var typed = new __WEBPACK_IMPORTED_MODULE_0_typed_js___default.a(".typing_text", options);
 
 /***/ }),
 /* 1 */
